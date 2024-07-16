@@ -1,0 +1,30 @@
+{
+  "name": "breast-stroke-performance",
+  "version": "1.0.0",
+  "description": "My breast-stroke performance project with TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch src -e ts --exec ts-node src/index.ts",
+    "build": "rd /s /q dist & tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SafeWinter/breast-stroke-performance.git"
+  },
+  "keywords": [
+    "typescript",
+    "swim",
+    "breast-stroke",
+    "data",
+    "visualization"
+  ],
+  "author": "Anton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SafeWinter/breast-stroke-performance/issues"
+  },
+  "homepage": "https://github.com/SafeWinter/breast-stroke-performance#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.10"
+  }
+}
