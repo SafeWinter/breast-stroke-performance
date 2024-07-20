@@ -9,4 +9,5 @@ const distanceTotal = data.reduce((acc, {distance}) => acc + distance, 0);
 lg(`Total distance: ${distanceTotal} m`);
 
 const speeds = data.map(computeSpeedPerKm);
-lg(speeds.filter(s => s.substring(0,2)==='22'))
+// lg(speeds.filter(s => s.substring(0,2)==='22'))
+lg(data.filter(d => computeSpeedPerKm(d).substring(0, 2) === '22'))

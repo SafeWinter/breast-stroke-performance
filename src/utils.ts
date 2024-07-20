@@ -57,16 +57,17 @@ export function parseRecord(record: RawRecordData): Record | never {
     };
 }
 
+
 /**
- * Compute the speed per km and format the output as `mm'ss.SS"`
+ * Computes the speed per km in the format mm'ss"
  * 
- * @param item target piece of data to compute the speed per km
- * @returns formatted result, e.g. `24'12.34"`
+ * @param item  target piece of data to compute speed per km
+ * @returns speed per km in the format mm'ss"
  */
 export function computeSpeedPerKm(item: Record): string {
-    const {speed1Km} = item;
-    const minute = Math.floor(speed1Km / 60);
-    const second = ((speed1Km * 10000) % 600000)/10000;
-    const leadingZero = second >= 10 ? '' : '0';
-    return `${minute}'${leadingZero}${second.toFixed(2)}"`;
+    const { speed1Km } = item;
+    const mm = Math.floor(speed1Km / 60);
+    const sec = (speed1Km % 60);
+    const ss = sec.toFixed(2).padStart(5, '0'); // Ensures the format xx.xx
+    return `${mm}'${ss}"`;
 }
