@@ -56,3 +56,11 @@ export function parseRecord(record: RawRecordData): Record | never {
         speedLoop,
     };
 }
+
+export function computeSpeedPerKm(item: Record): string {
+    const {speed1Km} = item;
+    const minute = Math.floor(speed1Km / 60);
+    const second = ((speed1Km * 10000) % 600000)/10000;
+    const leadingZero = second >= 10 ? '' : '0';
+    return `${minute}'${leadingZero}${second.toFixed(2)}"`;
+}
