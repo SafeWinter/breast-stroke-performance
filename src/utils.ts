@@ -57,6 +57,12 @@ export function parseRecord(record: RawRecordData): Record | never {
     };
 }
 
+/**
+ * Compute the speed per km and format the output as `mm'ss.SS"`
+ * 
+ * @param item target piece of data to compute the speed per km
+ * @returns formatted result, e.g. `24'12.34"`
+ */
 export function computeSpeedPerKm(item: Record): string {
     const {speed1Km} = item;
     const minute = Math.floor(speed1Km / 60);
