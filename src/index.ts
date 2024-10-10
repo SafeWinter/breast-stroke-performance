@@ -1,12 +1,16 @@
 import {rawRecords} from './data';
-import { parseRecord, computeSpeedPerKm } from './utils';
+import { parseRecord, computeSpeedPerKm, computeSpeedPerLoop } from './utils';
 
 const lg = console.log;
 // lg(rawRecords)
 // lg(rawRecords.data.map(parseRecord));
 const data = rawRecords.data.map(parseRecord);
-const latestSpeed = computeSpeedPerKm(data[data.length - 1]);
-lg(`Latest speed: ${latestSpeed}`);
+const lastRecord = data[data.length - 1];
+const latestSpeed = computeSpeedPerKm(lastRecord);
+lg(`Latest speed: ${latestSpeed}/km`);
+
+const speedPerLoop = computeSpeedPerLoop(lastRecord);
+lg(`Speed per loop: ${speedPerLoop}/loop`);
 
 const distanceTotal = data.reduce((acc, {distance}) => acc + distance, 0);
 lg(`Total distance: ${distanceTotal} m`);

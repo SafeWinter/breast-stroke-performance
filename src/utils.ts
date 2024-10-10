@@ -33,6 +33,25 @@ function computeSpeed1Km(distance: number, seconds: number): number {
     return parseFloat((seconds * 1000 / distance).toFixed(4));
 }
 
+/**
+ * Converts seconds into a string of format mm'ss"
+ * 
+ * @param seconds  seconds to be converted
+ * @returns string of format mm'ss"
+ */
+function convert2MMSS(seconds: number): string {
+    const mm = Math.floor(seconds / 60);
+    const sec = (seconds % 60);
+    const ss = sec.toFixed(2).padStart(5, '0'); // Ensures the format xx.xx
+    return `${mm}'${ss}"`;
+}
+
+/**
+ * Parses the raw record data into a record object
+ * 
+ * @param record  raw record data to be parsed
+ * @returns parsed record object
+ */
 export function parseRecord(record: RawRecordData): Record | never {
 
     if(!validRecordData(record)) {
@@ -65,9 +84,16 @@ export function parseRecord(record: RawRecordData): Record | never {
  * @returns speed per km in the format mm'ss"
  */
 export function computeSpeedPerKm(item: Record): string {
-    const { speed1Km } = item;
-    const mm = Math.floor(speed1Km / 60);
-    const sec = (speed1Km % 60);
-    const ss = sec.toFixed(2).padStart(5, '0'); // Ensures the format xx.xx
-    return `${mm}'${ss}"`;
+    return convert2MMSS(item.speed1Km);
+}
+
+
+/**
+ * Computes the speed per loop in format of mm'ss"
+ * 
+ * @param item  target piece of data to compute speed per loop
+ * @returns speed per loop in format of mm'ss"
+ */
+export function computeSpeedPerLoop(item: Record): string {
+    return convert2MMSS(item.speedLoop);
 }
