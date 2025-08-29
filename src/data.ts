@@ -90,5 +90,6 @@ export const rawRecords: RawRecord = {
     { date: "2025-08-22", time: "24:12", loop: 16, loopSize: 66 },
     { date: "2025-08-24", time: "25:49", loop: 17, loopSize: 66 },
     { date: "2025-08-26", time: "25:36", loop: 17, loopSize: 66 },
+    { date: "2025-08-28", time: "23:49", loop: 16, loopSize: 66 },
   ],
 };
