@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/SafeWinter/breast-stroke-performance#readme",
   "devDependencies": {
-    "@types/node": "^20.14.10"
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.10"
   },
   "dependencies": {
     "breast-stroke-performance": "file:"
