@@ -98,5 +98,26 @@ export const rawRecords: RawRecord = {
     { date: "2025-09-24", time: "25:59", loop: 17, loopSize: 66 },
     { date: "2025-10-06", time: "28:24", loop: 18, loopSize: 66 },
     { date: "2025-10-08", time: "25:30", loop: 17, loopSize: 66 },
+    { date: "2025-11-14", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-16", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-18", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-20", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-22", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-24", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-27", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-11-30", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-02", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-04", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-06", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-10", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-12", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-16", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-18", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-24", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2025-12-31", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2026-01-03", time: "26:00", loop: 16, loopSize: 66 },  // in Senlang gym
+    { date: "2026-01-06", time: "26:00", loop: 16, loopSize: 66 },  // Deshenyuan reopened, no timing 
+    { date: "2026-01-08", time: "25:26", loop: 17, loopSize: 66 }, 
+    { date: "2026-01-10", time: "25:21", loop: 17, loopSize: 66 }, 
   ],
 };
