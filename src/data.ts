@@ -119,5 +119,6 @@ export const rawRecords: RawRecord = {
     { date: "2026-01-06", time: "26:00", loop: 16, loopSize: 66 },  // Deshenyuan reopened, no timing 
     { date: "2026-01-08", time: "25:26", loop: 17, loopSize: 66 }, 
     { date: "2026-01-10", time: "25:21", loop: 17, loopSize: 66 }, 
+    { date: "2026-01-12", time: "25:16", loop: 17, loopSize: 66 }, 
   ],
 };
