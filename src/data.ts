@@ -120,5 +120,6 @@ export const rawRecords: RawRecord = {
     { date: "2026-01-08", time: "25:26", loop: 17, loopSize: 66 }, 
     { date: "2026-01-10", time: "25:21", loop: 17, loopSize: 66 }, 
     { date: "2026-01-12", time: "25:16", loop: 17, loopSize: 66 }, 
+    { date: "2026-01-15", time: "25:16", loop: 17, loopSize: 66 },  // no timing
   ],
 };
